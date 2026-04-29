@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutura | Fruta të Thata</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Nutura</div>
+
+    <div class="center">
+        <h1>Nutura Fruta të Thata</h1>
+        <p class="slogan">Shije natyrale, cilësi premium</p>
+    </div>
+</header>
+
+<section class="products">
+    <div id="productGrid"></div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalName"></h2>
+        <p id="modalDesc"></p>
+        <p id="modalPrice"></p>
+        <button onclick="orderNow()">Porosit</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
