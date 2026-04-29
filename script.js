@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    font-family:Poppins;
+    background:#f7f7f2;
+}
+
+header{
+    position:relative;
+    padding:30px;
+    text-align:center;
+    background:#556b2f;
+    color:white;
+}
+
+.logo{
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.center h1{
+    font-family:'Playfair Display';
+    margin:0;
+}
+
+.slogan{
+    font-style:italic;
+    opacity:0.8;
+}
+
+.products{
+    padding:40px;
+}
+
+#productGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.product{
+    background:white;
+    border-radius:12px;
+    padding:10px;
+    text-align:center;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background:white;
+    margin:10% auto;
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.close{
+    float:right;
+    cursor:pointer;
+}
